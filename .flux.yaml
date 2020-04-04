@@ -2,3 +2,4 @@ version: 1 # must be `1`
 patchUpdated:
   generators:
   - command: cdk8s synth && cat dist/*
+  patchFile: flux-patch.yaml
