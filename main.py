@@ -19,7 +19,7 @@ class MyChart(Chart):
 
         k8s.Deployment(self, 'deployment',
                        spec=k8s.DeploymentSpec(
-                         replicas=2,
+                         replicas=4,
                          selector=k8s.LabelSelector(match_labels=label),
                          template=k8s.PodTemplateSpec(
                            metadata=k8s.ObjectMeta(labels=label),
