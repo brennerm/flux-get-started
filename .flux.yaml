@@ -1,5 +1,5 @@
 version: 1 # must be `1`
 patchUpdated:
   generators:
-  - command: /sbin/apk add yarn python3 && yarn global add cdk8s-cli && cdk8s synth && cat dist/*
+  - command: /sbin/apk add yarn python3 && pip3 install pipenv && yarn global add cdk8s-cli && cdk8s synth && cat dist/*
   patchFile: flux-patch.yaml
